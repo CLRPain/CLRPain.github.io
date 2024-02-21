@@ -46,72 +46,99 @@
   <input type="number" id="NormalForce" placeholder="Normal Force">
   <input type="number" id="AppliedForce" placeholder="Applied Force">
   <input type="number" id="AngleOfForce" placeholder="Angle Of Force">
+
   <button onclick="Question1()">Solve Question 1</button>
   <p id="Question1Result1"></p>
   <p id="Question1Result2"></p> 
 </div>
 
 <div id="Question 2" class="tab">
-  <h3>Divide by 6</h3>
-  <input type="number" id="divideInput" placeholder="Enter a number">
-  <button onclick="divideBySix()">Divide</button>
-  <p id="divideResult"></p>
+  <h3>Question 2</h3>
+  <input type="number" id="Mass" placeholder="Mass">
+  <input type="number" id="Displacement" placeholder="Displacement">
+  <input type="number" id="Angle" placeholder="Angle">
+  <input type="number" id="CoefficientOfFriction" placeholder="Coefficient Of Friction">
+  <input type="number" id="Time" placeholder="Time">
+
+  <button onclick="Question2()">Solve Question 2</button>
+  <p id="Question2Result1"></p>
 </div>
 
 <div id="Question 3" class="tab">
-  <h3>Divide by 6</h3>
-  <input type="number" id="divideInput" placeholder="Enter a number">
-  <button onclick="divideBySix()">Divide</button>
-  <p id="divideResult"></p>
+  <h3>Question 3</h3>
+  <input type="number" id="Mass" placeholder="Mass">
+  <input type="number" id="Distance" placeholder="Distance">
+  <input type="number" id="Speed" placeholder="Speed">
+  <input type="number" id="Friction" placeholder="Friction">
+  <button onclick="Question3()">Solve Question 3</button>
+  <p id="Question3Result1"></p>
+  <p id="Question3Result2"></p>
+
 </div>
 
 <div id="Question 4" class="tab">
-  <h3>Divide by 6</h3>
-  <input type="number" id="divideInput" placeholder="Enter a number">
-  <button onclick="divideBySix()">Divide</button>
-  <p id="divideResult"></p>
+    <h3>Question 4</h3>
+    <input type="number" id="A" placeholder="Box A">
+    <input type="number" id="B" placeholder="Box B">
+    <input type="number" id="Force" placeholder="Force">
+    <button onclick="Question4()">Solve Question 4</button>
+    <p id="Question4Result1"></p>
+    <p id="Question4Result2"></p>
 </div>
 
 <div id="Question 5" class="tab">
-  <h3>Divide by 6</h3>
-  <input type="number" id="divideInput" placeholder="Enter a number">
-  <button onclick="divideBySix()">Divide</button>
-  <p id="divideResult"></p>
+    <h3>Question 5</h3>
+    <input type="number" id="Load" placeholder="Load">
+    <input type="number" id="Weight" placeholder="Weight">
+    <button onclick="Question5()">Solve Question 5</button>
+    <p id="Question5Result1"></p>
+    <p id="Question5Result2"></p>
 </div>
 
 <div id="Question 6" class="tab">
-  <h3>Divide by 6</h3>
-  <input type="number" id="divideInput" placeholder="Enter a number">
-  <button onclick="divideBySix()">Divide</button>
-  <p id="divideResult"></p>
+    <h3>Question 6</h3>
+    <input type="number" id="Mass1" placeholder="Mass 1">
+    <input type="number" id="Mass2" placeholder="Mass 2">
+    <input type="number" id="Distance" placeholder="Distance">
+    <input type="number" id="Time" placeholder="Time">
+    <button onclick="Question6()">Solve Question 6</button>
+    <p id="Question6Result1"></p>
 </div>
 
 <div id="Question 7" class="tab">
-  <h3>Divide by 6</h3>
-  <input type="number" id="divideInput" placeholder="Enter a number">
-  <button onclick="divideBySix()">Divide</button>
-  <p id="divideResult"></p>
+    <h3>Question 5</h3>
+    <input type="number" id="Load" placeholder="Load">
+    <input type="number" id="Weight" placeholder="Weight">
+    <button onclick="Question5()">Solve Question 5</button>
+    <p id="Question4Result1"></p>
+    <p id="Question4Result2"></p>
 </div>
 
 <div id="Question 8" class="tab">
-  <h3>Divide by 6</h3>
-  <input type="number" id="divideInput" placeholder="Enter a number">
-  <button onclick="divideBySix()">Divide</button>
-  <p id="divideResult"></p>
+    <h3>Question 5</h3>
+    <input type="number" id="Load" placeholder="Load">
+    <input type="number" id="Weight" placeholder="Weight">
+    <button onclick="Question5()">Solve Question 5</button>
+    <p id="Question4Result1"></p>
+    <p id="Question4Result2"></p>
 </div>
 
 <div id="Question 9" class="tab">
-  <h3>Divide by 6</h3>
-  <input type="number" id="divideInput" placeholder="Enter a number">
-  <button onclick="divideBySix()">Divide</button>
-  <p id="divideResult"></p>
+    <h3>Question 5</h3>
+    <input type="number" id="Load" placeholder="Load">
+    <input type="number" id="Weight" placeholder="Weight">
+    <button onclick="Question5()">Solve Question 5</button>
+    <p id="Question4Result1"></p>
+    <p id="Question4Result2"></p>
 </div>
 
 <div id="Question 10" class="tab">
-  <h3>Divide by 6</h3>
-  <input type="number" id="divideInput" placeholder="Enter a number">
-  <button onclick="divideBySix()">Divide</button>
-  <p id="divideResult"></p>
+    <h3>Question 5</h3>
+    <input type="number" id="Load" placeholder="Load">
+    <input type="number" id="Weight" placeholder="Weight">
+    <button onclick="Question5()">Solve Question 5</button>
+    <p id="Question4Result1"></p>
+    <p id="Question4Result2"></p>
 </div>
 
 
@@ -126,6 +153,8 @@
 </div>
 
 <script>
+var g = 9.8;
+
 function openTab(tabName) {
   // Hide all tabs and deactivate tab buttons
   var tabs = document.getElementsByClassName("tab");
@@ -162,6 +191,11 @@ function divideBySix() {
   }
 }
 
+function CalculateMgx(angle, mag)
+{
+    return;
+}
+
 function Question1() {
   // Get the input value
   var N = parseFloat(document.getElementById("NormalForce").value);
@@ -190,6 +224,67 @@ function Question1() {
     // Display an error message if the input is not a valid number
     document.getElementById("Question1Result1").innerText = "Please enter a valid number";
   }
+}
+
+function Question2() {
+    var M = parseFloat(document.getElementById("Mass").value);
+    var D = parseFloat(document.getElementById("Displacement").value);
+    var Ang = parseFloat(document.getElementById("Angle").value);
+    var C = parseFloat(document.getElementById("CoefficientOfFriction").value);
+    var T = parseFloat(document.getElementById("Time").value);
+}
+
+function Question3() {
+    var M = parseFloat(document.getElementById("Mass").value);
+    var D = parseFloat(document.getElementById("Distance").value);
+    var S = parseFloat(document.getElementById("Speed").value);
+    var F = parseFloat(document.getElementById("Friction").value);
+}
+
+function Question4() {
+    var A = parseFloat(document.getElementById("A").value);
+    var B = parseFloat(document.getElementById("B").value);
+    var F = parseFloat(document.getElementById("Force").value);
+}
+
+function Question5() {
+    var L = parseFloat(document.getElementById("Load").value);
+    var W = parseFloat(document.getElementById("Weight").value);
+}
+
+function Question6() {
+    var M1 = parseFloat(document.getElementById("Mass1").value);
+    var M2 = parseFloat(document.getElementById("Mass2").value);
+    var D = parseFloat(document.getElementById("Distance").value);
+    var T = parseFloat(document.getElementById("Time").value);
+}
+
+function Question7() {
+    var M = parseFloat(document.getElementById("Mass").value);
+    var D = parseFloat(document.getElementById("Distance").value);
+    var S = parseFloat(document.getElementById("Speed").value);
+    var F = parseFloat(document.getElementById("Friction").value);
+}
+
+function Question8() {
+    var M = parseFloat(document.getElementById("Mass").value);
+    var D = parseFloat(document.getElementById("Distance").value);
+    var S = parseFloat(document.getElementById("Speed").value);
+    var F = parseFloat(document.getElementById("Friction").value);
+}
+
+function Question9() {
+    var M = parseFloat(document.getElementById("Mass").value);
+    var D = parseFloat(document.getElementById("Distance").value);
+    var S = parseFloat(document.getElementById("Speed").value);
+    var F = parseFloat(document.getElementById("Friction").value);
+}
+
+function Question10() {
+    var M = parseFloat(document.getElementById("Mass").value);
+    var D = parseFloat(document.getElementById("Distance").value);
+    var S = parseFloat(document.getElementById("Speed").value);
+    var F = parseFloat(document.getElementById("Friction").value);
 }
 
 function addNumbers() {

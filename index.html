@@ -106,39 +106,47 @@
 </div>
 
 <div id="Question 7" class="tab">
-    <h3>Question 5</h3>
-    <input type="number" id="Load" placeholder="Load">
-    <input type="number" id="Weight" placeholder="Weight">
-    <button onclick="Question5()">Solve Question 5</button>
-    <p id="Question4Result1"></p>
-    <p id="Question4Result2"></p>
+    <h3>Question 7</h3>
+    <input type="number" id="Mass1" placeholder="Mass 1">
+    <input type="number" id="Mass2" placeholder="Mass 2">
+    <input type="number" id="Mass3" placeholder="Mass 3">
+    <input type="number" id="CoefficientOfFriction" placeholder="Coefficient Of Friction">
+    <button onclick="Question7()">Solve Question 7</button>
+    <p id="Question7Result1"></p>
+    <p id="Question7Result2"></p>
+    <p id="Question7Result3"></p>
 </div>
 
 <div id="Question 8" class="tab">
-    <h3>Question 5</h3>
-    <input type="number" id="Load" placeholder="Load">
-    <input type="number" id="Weight" placeholder="Weight">
-    <button onclick="Question5()">Solve Question 5</button>
-    <p id="Question4Result1"></p>
-    <p id="Question4Result2"></p>
+    <h3>Question 8</h3>
+    <input type="number" id="Mass1" placeholder="Mass 1">
+    <input type="number" id="Mass2" placeholder="Mass 2">
+    <input type="number" id="Angle" placeholder="Angle">
+    <input type="number" id="FAlu" placeholder="Friction of Aluminum">
+    <input type="number" id="FCop" placeholder="Friction of Copper">
+    <button onclick="Question8()">Solve Question 8</button>
+    <p id="Question8Result1"></p>
+    <p id="Question8Result2"></p>
 </div>
 
 <div id="Question 9" class="tab">
-    <h3>Question 5</h3>
-    <input type="number" id="Load" placeholder="Load">
-    <input type="number" id="Weight" placeholder="Weight">
-    <button onclick="Question5()">Solve Question 5</button>
-    <p id="Question4Result1"></p>
-    <p id="Question4Result2"></p>
+    <h3>Question 9</h3>
+    <input type="number" id="Mass1" placeholder="Mass 1">
+    <input type="number" id="Mass2" placeholder="Mass 2">
+    <input type="number" id="Angle1" placeholder="Angle 1">
+    <input type="number" id="Angle2" placeholder="Angle 2">
+    <button onclick="Question9()">Solve Question 9</button>
+    <p id="Question9Result1"></p>
+    <p id="Question9Result2"></p>
 </div>
 
 <div id="Question 10" class="tab">
-    <h3>Question 5</h3>
-    <input type="number" id="Load" placeholder="Load">
-    <input type="number" id="Weight" placeholder="Weight">
-    <button onclick="Question5()">Solve Question 5</button>
-    <p id="Question4Result1"></p>
-    <p id="Question4Result2"></p>
+    <h3>Question 10</h3>
+    <input type="number" id="A" placeholder="Block A">
+    <input type="number" id="B" placeholder="Block B">
+    <input type="number" id="CoefficientOfFriction" placeholder="Coefficient Of Friction">
+    <button onclick="Question10()">Solve Question 10</button>
+    <p id="Question10Result1"></p>
 </div>
 
 
@@ -260,24 +268,25 @@ function Question6() {
 }
 
 function Question7() {
-    var M = parseFloat(document.getElementById("Mass").value);
-    var D = parseFloat(document.getElementById("Distance").value);
-    var S = parseFloat(document.getElementById("Speed").value);
-    var F = parseFloat(document.getElementById("Friction").value);
+    var M1 = parseFloat(document.getElementById("Mass1").value);
+    var M2 = parseFloat(document.getElementById("Mass2").value);
+    var M3 = parseFloat(document.getElementById("Mass3").value);
+    var C = parseFloat(document.getElementById("CoefficientOfFriction").value);
 }
 
 function Question8() {
-    var M = parseFloat(document.getElementById("Mass").value);
-    var D = parseFloat(document.getElementById("Distance").value);
-    var S = parseFloat(document.getElementById("Speed").value);
-    var F = parseFloat(document.getElementById("Friction").value);
+    var M1 = parseFloat(document.getElementById("Mass1").value);
+    var M2 = parseFloat(document.getElementById("Mass2").value);
+    var A = parseFloat(document.getElementById("Angle").value);
+    var FA = parseFloat(document.getElementById("FAlu").value);
+    var FC = parseFloat(document.getElementById("FCop").value);
 }
 
 function Question9() {
-    var M = parseFloat(document.getElementById("Mass").value);
-    var D = parseFloat(document.getElementById("Distance").value);
-    var S = parseFloat(document.getElementById("Speed").value);
-    var F = parseFloat(document.getElementById("Friction").value);
+    var M1 = parseFloat(document.getElementById("Mass1").value);
+    var M2 = parseFloat(document.getElementById("Mass2").value);
+    var A1 = parseFloat(document.getElementById("Angle1").value);
+    var A2 = parseFloat(document.getElementById("Angle2").value);
 }
 
 function Question10() {

@@ -220,7 +220,7 @@ function Question1() {
     var radians = Ang * Math.PI / 180;
     var hori = Math.cos(radians)*App;
     var vert = Math.sin(radians)*App;
-    var result = hori/(600+Math.sin(radians)*App);
+    var result = hori/(600+vert);
 
     var result2 = hori - (result*(600-vert));
     result2 = result2/(600/9.8);
